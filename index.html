@@ -1,0 +1,394 @@
+<!DOCTYPE HTML>
+<!--
+	Contenu PUBIT recomposé sur le design Hyperspace by HTML5 UP
+	html5up.net | @ajlkn — Free for personal and commercial use under the CCA 3.0 license
+-->
+<html lang="fr">
+	<head>
+		<title>Pubbit — Gagnez des Sats en naviguant</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Accueil</a></li>
+							<li><a href="#features">Fonctionnalités</a></li>
+							<li><a href="#how">Comment ça marche</a></li>
+							<li><a href="#pricing">Tarifs</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<img src="images/logo.png">
+							<h1>Pubbit</h1>
+							<p>La première extension web qui rémunère votre attention. Bitcoin directement dans votre navigateur, via le réseau Lightning.</p>
+							<ul class="actions">
+								<li><a href="#how" class="button scrolly">Installer l'extension</a></li>
+								<li><a href="#features" class="button scrolly">Voir la démo</a></li>
+							</ul>
+							<div class="ticker-live">
+								<div class="ticker-label">En direct</div>
+								<div class="ticker-value"><span id="counter">0</span> Sats/jour gagnés en moyenne</div>
+								<div class="ticker-bar">
+									<div class="ticker-fill"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Comment ça marche / Guide d'installation -->
+				<section id="how" class="wrapper style2">
+					<div class="inner">
+						<h2>Guide d'installation pas-à-pas — PubBit</h2>
+						<p>PubBit est une extension légère qui vous récompense en Sats pendant votre navigation via le réseau Lightning. Disponible pour Chrome et Firefox. Suivez ces 4 étapes simples ; chaque étape contient une grande image pour vous guider visuellement.</p>
+						<div class="how-steps">
+							<!-- Step 1 -->
+							<article class="step">
+								<div class="image"><img src="images/etape1.png" alt="Télécharger et dézipper" /></div>
+								<div class="content">
+									<h3>1 — Télécharger & dézipper</h3>
+									<p>Téléchargez le fichier depuis <a href="https://pubbit.com" target="_blank">pubbit.com</a>. Le fichier est généralement nommé <em>pubbit-x.y.z.zip</em>. Une fois le téléchargement terminé, dézippez-le sur votre ordinateur (clic droit → Extraire / unzip).</p>
+									<p>Vous obtiendrez un dossier contenant au minimum : <code>manifest.json</code>, un dossier <code>icons/</code> et un dossier <code>src/</code>. Conservez ce dossier accessible (par exemple sur le Bureau) pour l'étape d'installation.</p>
+								</div>
+							</article>
+							<!-- Step 2 -->
+							<article class="step">
+								<div class="image"><img src="images/etape2.png" alt="Ouvrir le navigateur" /></div>
+								<div class="content">
+									<h3>2 — Ouvrir Chrome ou Firefox</h3>
+									<p>Choisissez le navigateur dans lequel vous souhaitez installer PubBit. Ces instructions couvrent Chrome (Chromium, Edge basé sur Chromium) et Firefox. Si vous utilisez un autre navigateur, suivez la procédure correspondante sur <a href="https://pubbit.com" target="_blank">notre site</a>.</p>
+									<p>Important : pour Chrome, assurez-vous d'avoir une version récente et d'activer le mode développeur lors de l'installation locale. Pour Firefox, on utilisera la page <code>about:debugging</code> pour charger temporairement l'extension.</p>
+								</div>
+							</article>
+							<!-- Step 3 -->
+							<article class="step">
+								<div class="image"><img src="images/etape3.png" alt="Passer en mode développeur / about:debugging" /></div>
+								<div class="content">
+									<h3>3 — Mode développeur (Chrome) ou page de debug (Firefox)</h3>
+									<div class="instructions chrome" style="display:none;">
+										<h4>Chrome / Chromium</h4>
+										<ol>
+											<li>Ouvrez l'adresse <code>chrome://extensions/</code> dans la barre d'adresse.</li>
+											<li>Activez le <strong>Mode développeur</strong> (coin supérieur droit).</li>
+											<li>Cliquez sur <strong>Charger l'extension non empaquetée</strong>.</li>
+											<li>Sélectionnez le dossier dézippé (le dossier qui contient <code>manifest.json</code>).</li>
+											<li>L'extension apparaîtra dans la liste et s'activera immédiatement. Vous pouvez épingler l'icône si vous le souhaitez.</li>
+										</ol>
+									</div>
+									<div class="instructions firefox" style="display:none;">
+										<h4>Firefox</h4>
+										<ol>
+											<li>Ouvrez <code>about:debugging#/runtime/this-firefox</code> dans la barre d'adresse.</li>
+											<li>Cliquez sur <strong>Charger un module complémentaire temporaire</strong>.</li>
+											<li>Sélectionnez le fichier <code>manifest.json</code> dans le dossier dézippé.</li>
+											<li>L'extension sera chargée pour la session courante (temporaire). Pour une installation permanente, suivez la procédure de publication sur AMO ou utilisez un XPI signé.</li>
+										</ol>
+									</div>
+									<p>Ces étapes permettent d'installer localement en développement. Si vous préférez, installez PubBit directement depuis le Chrome Web Store ou AMO (Firefox) si la version y est disponible.</p>
+								</div>
+							</article>
+							<!-- Step 4 -->
+							<article class="step">
+								<div class="image"><img src="images/etape4.png" alt="Charger depuis le stockage local / activer" /></div>
+								<div class="content">
+									<h3>4 — Charger et activer</h3>
+									<div class="instructions chrome" style="display:none;">
+										<p>Après avoir chargé l'extension non empaquetée, vérifiez les permissions demandées (accès aux onglets, permissions de stockage, etc.). Activez l'extension et cliquez sur l'icône pour ouvrir le panneau PubBit.</p>
+									</div>
+									<div class="instructions firefox" style="display:none;">
+										<p>Après chargement temporaire, cliquez sur l'icône dans la barre d'outils pour ouvrir PubBit. Notez que le chargement temporaire disparaît après redémarrage ; pour usage prolongé, installez depuis AMO.</p>
+									</div>
+									<p>Une fois installée, PubBit peut vous demander d'autoriser une connexion à votre portefeuille Lightning. Ceci est nécessaire pour créditer vos Sats. Les paramètres de l'extension permettent d'ajuster la fréquence et les préférences de monétisation.</p>
+								</div>
+							</article>
+						</div>
+						<!-- Description détaillée de l'extension -->
+						<section style="margin-top:2rem; background: rgba(255,255,255,0.01); padding:1rem; border-radius:8px;">
+							<h3>Description complète de PubBit</h3>
+							<p>PubBit est une extension qui rémunère votre attention en distribuant des fractions de Bitcoin (Sats) via Lightning. Elle fonctionne en arrière-plan, évalue anonymement l'engagement et propose des micropaiements rémunérateurs. Caractéristiques :</p>
+							<ul>
+								<li><strong>Confidentialité :</strong> pas de tracking centralisé, les données restent locales.</li>
+								<li><strong>Rapide :</strong> paiements Lightning instantanés.</li>
+								<li><strong>Contrôlable :</strong> paramètres pour limiter la fréquence et les types d'annonces.</li>
+								<li><strong>Portable :</strong> disponible sur Chrome & Firefox.</li>
+							</ul>
+							<p>Pour toute question ou pour signaler un problème, rendez-vous sur <a href="https://pubbit.com" target="_blank">pubbit.com</a> ou contactez-nous via la page Contact.</p>
+						</section>
+					</div>
+					<script>
+						// Détecte Chrome vs Firefox et affiche les instructions correspondantes
+						(function(){
+							var ua = navigator.userAgent.toLowerCase();
+							var isFirefox = ua.indexOf('firefox') !== -1;
+							var isChrome = /chrome|chromium|crios/.test(ua) && !isFirefox;
+							var chromeEls = document.querySelectorAll('.instructions.chrome');
+							var firefoxEls = document.querySelectorAll('.instructions.firefox');
+							if(isFirefox){
+								firefoxEls.forEach(function(e){e.style.display='block'});
+								chromeEls.forEach(function(e){e.style.display='none'});
+							} else if(isChrome){
+								chromeEls.forEach(function(e){e.style.display='block'});
+								firefoxEls.forEach(function(e){e.style.display='none'});
+							} else {
+								chromeEls.forEach(function(e){e.style.display='block'});
+								firefoxEls.forEach(function(e){e.style.display='block'});
+							}
+						})();
+					</script>
+				</section>
+
+				<!-- Fonctionnalités -->
+					<section id="features" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Pourquoi Pubbit?</h2>
+							<p>Une nouvelle façon d'interagir avec le web, pensée pour le marché UEMOA et au-delà.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-coins"></span>
+									<h3>Gagnez vraiment</h3>
+									<p>Pas de fausses promesses. Des vrais Sats Bitcoin, retirables à tout moment sur votre portefeuille.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-bolt"></span>
+									<h3>Lightning Fast</h3>
+									<p>Transactions instantanées avec des frais inférieurs à 1%. Aucun intermédiaire lourd.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-lock"></span>
+									<h3>100% privé</h3>
+									<p>Zéro tracking. Zéro données personnelles. Juste vous et vos Sats.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-globe"></span>
+									<h3>Accès mondial</h3>
+									<p>Disponible partout. Aucune limite géographique, pas de banque requise.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-mobile-alt"></span>
+									<h3>Mobile first</h3>
+									<p>Optimisé pour votre téléphone. Légère, rapide et intuitive.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-bullseye"></span>
+									<h3>Hyper simple</h3>
+									<p>Installer, surfer, gagner. Trois étapes, c'est tout.</p>
+								</section>
+							</div>
+						</div>
+					</section>
+
+				<!-- Statistiques -->
+					<section id="stats" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Ils nous font déjà confiance</h2>
+							<div class="stats-grid">
+								<div class="stat">
+									<div class="stat-number" data-target="200000">0</div>
+									<div class="stat-label">Sats distribués</div>
+								</div>
+								<div class="stat">
+									<div class="stat-number" data-target=12">0</div>
+									<div class="stat-label">Bêta testeurs</div>
+								</div>
+								<div class="stat">
+									<div class="stat-number" data-target="3">0</div>
+									<div class="stat-label">Pays actifs</div>
+								</div>
+								<div class="stat">
+									<div class="stat-number" data-target="99">0</div>
+									<div class="stat-label">% de satisfaction</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Tarifs -->
+					<section id="pricing" class="wrapper style2 fade-up">
+						<div class="inner">
+							<h2>Tarification simplifiée</h2>
+							<p>Pour développeurs et créateurs.</p>
+							<div class="pricing-cards">
+								<div class="price-card">
+									<div class="price-badge">Basique</div>
+									<h3>Starter</h3>
+									<div class="price">25 000 XOF<span>/mois</span></div>
+									<ul class="price-features">
+										<li><span class="icon solid fa-check"></span>70% aux utilisateurs</li>
+										<li><span class="icon solid fa-check"></span>Stats en temps réel</li>
+										<li><span class="icon solid fa-check"></span>Support email</li>
+									</ul>
+									<a href="#contact" class="button scrolly">Commencer</a>
+								</div>
+
+								<div class="price-card featured">
+									<div class="price-badge premium">Populaire</div>
+									<h3>Pro</h3>
+									<div class="price">75 000 XOF<span>/mois</span></div>
+									<ul class="price-features">
+										<li><span class="icon solid fa-check"></span>70% aux utilisateurs</li>
+										<li><span class="icon solid fa-check"></span>Analytics avancées</li>
+										<li><span class="icon solid fa-check"></span>API d'intégration</li>
+										<li><span class="icon solid fa-check"></span>Support prioritaire</li>
+									</ul>
+									<a href="#contact" class="button primary scrolly">Commencer</a>
+								</div>
+
+								<div class="price-card">
+									<div class="price-badge">Pour les pros</div>
+									<h3>Entreprise</h3>
+									<div class="price">Personnalisé</div>
+									<ul class="price-features">
+										<li><span class="icon solid fa-check"></span>Tout du plan Pro</li>
+										<li><span class="icon solid fa-check"></span>Campagnes illimitées</li>
+										<li><span class="icon solid fa-check"></span>Manager dédié</li>
+										<li><span class="icon solid fa-check"></span>Intégrations custom</li>
+									</ul>
+									<a href="#contact" class="button scrolly">Nous contacter</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Prêt à révolutionner votre web?</h2>
+							<p>Rejoignez des milliers d'utilisateurs et de créateurs qui changent le web, un Sat à la fois.</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Nom</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Installer PUBBIT maintenant</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>À propos</h3>
+											<span>Pubbit — Révolutionner l'attention, rémunérer l'engagement.<br />
+											Une infrastructure publicitaire communautaire pour la zone UEMOA.</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">contact@pubit.io</a>
+										</li>
+										<li>
+											<h3>Réseaux</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+												<li><a href="#" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; 2026 PUBBIT. Tous droits réservés.</li><li>Conforme UEMOA</li><li>Powered by Lightning</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				// Compteur du bandeau "En direct" (ticker) et des statistiques,
+				// remplace la logique de script.js d'origine (sans dépendance emoji).
+				document.addEventListener('DOMContentLoaded', function () {
+
+					// Ticker Sats/jour
+					var counterEl = document.getElementById('counter');
+					if (counterEl) {
+						var target = 3480, current = 0;
+						var step = Math.max(1, Math.round(target / 60));
+						var tick = setInterval(function () {
+							current += step;
+							if (current >= target) {
+								current = target;
+								clearInterval(tick);
+							}
+							counterEl.textContent = current.toLocaleString('fr-FR');
+						}, 30);
+					}
+
+					// Compteurs de la section statistiques, déclenchés à l'entrée dans le viewport
+					var statNumbers = document.querySelectorAll('.stat-number');
+					var animated = false;
+
+					function animateStats() {
+						if (animated) return;
+						var statsSection = document.getElementById('stats');
+						if (!statsSection) return;
+						var rect = statsSection.getBoundingClientRect();
+						if (rect.top < window.innerHeight - 100) {
+							animated = true;
+							statNumbers.forEach(function (el) {
+								var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+								var current = 0;
+								var step = Math.max(1, Math.round(target / 80));
+								var tick = setInterval(function () {
+									current += step;
+									if (current >= target) {
+										current = target;
+										clearInterval(tick);
+									}
+									el.textContent = current.toLocaleString('fr-FR');
+								}, 20);
+							});
+						}
+					}
+
+					window.addEventListener('scroll', animateStats);
+					animateStats();
+				});
+			</script>
+
+	</body>
+</html>
