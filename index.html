@@ -1,13 +1,14 @@
 <!DOCTYPE HTML>
 <!--
-	Contenu PUBIT recomposé sur le design Hyperspace by HTML5 UP
+	Site Arise (ex-PubBit / BitGrid) — design Hyperspace by HTML5 UP
 	html5up.net | @ajlkn — Free for personal and commercial use under the CCA 3.0 license
 -->
 <html lang="fr">
 	<head>
-		<title>Pubbit — Gagnez des Sats en naviguant</title>
+		<title>Arise — Lancez. Grandissez. Gagnez des Sats.</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Arise connecte les porteurs de projets web avec une communauté de contributeurs rémunérés en Bitcoin (sats). Trafic qualifié au temps passé, ancrage IPFS + Bitcoin, paiements via Izichange." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -20,9 +21,12 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">Accueil</a></li>
+							<li><a href="#concept">Concept</a></li>
+							<li><a href="#audiences">Pour qui&nbsp;?</a></li>
 							<li><a href="#features">Fonctionnalités</a></li>
-							<li><a href="#how">Comment ça marche</a></li>
-							<li><a href="#pricing">Tarifs</a></li>
+							<li><a href="#security">Sécurité</a></li>
+							<li><a href="#how">Installer</a></li>
+							<li><a href="#campaigns">Campagnes</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
@@ -35,60 +39,210 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<img src="images/logo.png">
-							<h1>Pubbit</h1>
-							<p>La première extension web qui rémunère votre attention. Bitcoin directement dans votre navigateur, via le réseau Lightning.</p>
+							<img src="images/logo.png" alt="Arise">
+							<h1>Arise</h1>
+							<p class="tagline">Lancez. Grandissez. Gagnez.</p>
+							<p>La plateforme de croissance Web3 qui connecte les porteurs de projets à une communauté de contributeurs <strong>rémunérés en Bitcoin (sats)</strong>. Du trafic <strong>qualifié au temps passé</strong>, pas des clics&mdash; avec preuve d'intégrité <strong>IPFS + ancrage Bitcoin</strong>.</p>
 							<ul class="actions">
-								<li><a href="#how" class="button scrolly">Installer l'extension</a></li>
-								<li><a href="#features" class="button scrolly">Voir la démo</a></li>
+								<li><a href="#how" class="button primary scrolly">Installer l'extension</a></li>
+								<li><a href="#campaigns" class="button scrolly">Financer une campagne</a></li>
 							</ul>
 							<div class="ticker-live">
-								<div class="ticker-label">En direct</div>
-								<div class="ticker-value"><span id="counter">0</span> Sats/jour gagnés en moyenne</div>
+								<div class="ticker-label">Rémunération au temps actif</div>
+								<div class="ticker-value">Gagnez des sats à chaque visite qualifiée &mdash; ex. <span id="counter">0</span> sats / visite</div>
 								<div class="ticker-bar">
 									<div class="ticker-fill"></div>
 								</div>
 							</div>
+							<p class="badge-row">
+								<span class="pill">MVP v1.0</span>
+								<span class="pill">Chrome · Edge · Brave · Firefox (MV3)</span>
+								<span class="pill">Sats · Izichange · IPFS</span>
+							</p>
 						</div>
 					</section>
 
-				<!-- Comment ça marche / Guide d'installation -->
-				<section id="how" class="wrapper style2">
+				<!-- Concept : problème / solution -->
+					<section id="concept" class="wrapper style2 fade-up">
+						<div class="inner">
+							<h2>Le web récompense l'attention&mdash;pas les clics vides</h2>
+							<p>Les nouveaux projets peinent à trouver leurs premiers vrais utilisateurs. La publicité classique est coûteuse et peu ciblée, le « pay-per-click » ne garantit aucun engagement réel, et les micro-paiements Bitcoin restent difficiles à intégrer. <strong>Arise</strong> résout ces problèmes avec un écosystème simple à deux faces.</p>
+							<div class="flow">
+								<article class="flow-col">
+									<h3><span class="icon solid fa-rocket"></span> Le développeur finance</h3>
+									<ol class="flow-steps">
+										<li>Soumet l'URL de son site + un budget en sats.</li>
+										<li>Le site est <strong>épinglé sur IPFS</strong> (Pinata), avec empreinte SHA-256.</li>
+										<li>Paiement via <strong>Izichange</strong> (Mobile Money, crypto, BTC).</li>
+										<li>La campagne est publiée &mdash; visible par tous les utilisateurs.</li>
+									</ol>
+								</article>
+								<article class="flow-col">
+									<h3><span class="icon solid fa-hand-holding-usd"></span> Le contributeur gagne</h3>
+									<ol class="flow-steps">
+										<li>Installe l'extension et se connecte.</li>
+										<li>Parcourt les projets actifs (« Projets », « À découvrir »).</li>
+										<li>Visite un site &mdash; le <strong>chrono du temps actif</strong> démarre.</li>
+										<li>Valide sa visite &rarr; des <strong>sats</strong> créditent son wallet.</li>
+									</ol>
+								</article>
+							</div>
+							<p class="note">Le budget de la campagne est consommé <strong>au fur et à mesure des visites qualifiées</strong>&mdash; jamais distribué à l'avance. Chaque récompense n'est créditée qu'après vérification de l'intégrité IPFS du contenu.</p>
+						</div>
+					</section>
+
+				<!-- Pour qui ? -->
+					<section id="audiences" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Une valeur pour les deux côtés</h2>
+							<div class="audiences">
+								<section class="audience-card">
+									<span class="icon solid major fa-code"></span>
+									<h3>Développeurs &amp; porteurs de projets</h3>
+									<ul class="check-list">
+										<li>Trafic <strong>qualifié</strong> (durée minimum active sur le site).</li>
+										<li>Budget maîtrisé, consommé à la visite&mdash;pas à l'avance.</li>
+										<li>Preuve d'intégrité <strong>IPFS + ancrage paiement Bitcoin</strong>.</li>
+										<li>Publication automatique après paiement validé.</li>
+										<li>Idéal pour indie devs, Web3 et lancements early-stage.</li>
+									</ul>
+									<a href="#campaigns" class="button scrolly">Lancer une campagne</a>
+								</section>
+								<section class="audience-card">
+									<span class="icon solid major fa-user-astronaut"></span>
+									<h3>Contributeurs</h3>
+									<ul class="check-list">
+										<li>Revenus en <strong>sats</strong> en découvrant des projets.</li>
+										<li>Interface simple dans l'extension&mdash;pas de wallet complexe requis.</li>
+										<li>Rémunération <strong>proportionnelle au temps actif</strong>.</li>
+										<li>Wallet intégré : solde, historique, dépôt via Izichange.</li>
+										<li>Dépôt Mobile Money / crypto adapté à la zone UEMOA.</li>
+									</ul>
+									<a href="#how" class="button scrolly">Installer &amp; gagner</a>
+								</section>
+							</div>
+						</div>
+					</section>
+
+				<!-- Fonctionnalités -->
+					<section id="features" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Pourquoi Arise&nbsp;?</h2>
+							<p>Une infrastructure d'« attention economy » adossée à Bitcoin, pensée pour le marché UEMOA et au-delà.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-hourglass-half"></span>
+									<h3>Payé au temps réel</h3>
+									<p>Rémunération proportionnelle au temps <strong>activement</strong> passé sur un site&mdash;pas au clic. Chrono géré par l'extension en arrière-plan.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-coins"></span>
+									<h3>De vrais sats</h3>
+									<p>Les récompenses sont en satoshis (Bitcoin), stockées dans un wallet interne. Dépôt et financement via Izichange.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-shield-alt"></span>
+									<h3>Intégrité prouvée</h3>
+									<p>Chaque campagne est épinglée sur IPFS avec un manifeste immuable et un ancrage de paiement Bitcoin vérifiable.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-exchange-alt"></span>
+									<h3>Paiements Izichange</h3>
+									<p>Financez et déposez via Mobile Money, crypto (USDT, TRX, XRP) ou BTC. Conversion sats &harr; XOF intégrée.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-puzzle-piece"></span>
+									<h3>Multi-navigateur</h3>
+									<p>Extension Manifest V3 pour Chrome, Edge, Brave et Firefox (109+). Authentification Firebase (email &amp; Google).</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-bullseye"></span>
+									<h3>Hyper simple</h3>
+									<p>Installer, découvrir, gagner. Le développeur soumet une URL et un budget&mdash;Arise gère l'IPFS et le paiement.</p>
+								</section>
+							</div>
+						</div>
+					</section>
+
+				<!-- Sécurité IPFS + Bitcoin -->
+					<section id="security" class="wrapper style2 fade-up">
+						<div class="inner">
+							<h2>Sécurité : IPFS + ancrage Bitcoin</h2>
+							<p>Arise ne se contente pas de faire visiter des sites : chaque campagne est <strong>vérifiable de bout en bout</strong>. C'est la propriété intellectuelle clé de la plateforme.</p>
+							<div class="security-grid">
+								<section class="sec-card">
+									<span class="icon solid fa-thumbtack"></span>
+									<h3>1. Épinglage IPFS</h3>
+									<p>À la soumission, le contenu du site est épinglé sur IPFS via Pinata. L'affichage passe par une passerelle publique (<code>ipfs.io</code>) pour un rendu fiable.</p>
+								</section>
+								<section class="sec-card">
+									<span class="icon solid fa-fingerprint"></span>
+									<h3>2. Empreinte SHA-256</h3>
+									<p>Un hash cryptographique du contenu épinglé est enregistré. Il sert de référence d'intégrité pour chaque contribution future.</p>
+								</section>
+								<section class="sec-card">
+									<span class="icon solid fa-link"></span>
+									<h3>3. Manifeste + ancrage Bitcoin</h3>
+									<p>Un manifeste JSON immuable lie le contenu (CID + hash) au paiement (<code>bitcoinAnchor</code> Izichange/BTC), épinglé lui aussi sur IPFS.</p>
+								</section>
+								<section class="sec-card">
+									<span class="icon solid fa-check-circle"></span>
+									<h3>4. Vérification au crédit</h3>
+									<p>Avant chaque crédit de sats, le serveur revérifie que le contenu IPFS correspond au hash enregistré. Sinon, la récompense est rejetée.</p>
+								</section>
+							</div>
+							<pre class="manifest"><code>{
+  "arise": "1.0",
+  "type": "project_manifest",
+  "sourceUrl": "https://exemple.com",
+  "contentCid": "bafkrei…",
+  "contentSha256": "abc123…",
+  "payment": {
+    "amountSats": 5000,
+    "bitcoinAnchor": "izipay:btc:pi_xxx:proj_temp_xxx"
+  },
+  "rewards": { "rewardSats": 10, "minVisitDuration": 120 }
+}</code></pre>
+						</div>
+					</section>
+
+				<!-- Installation de l'extension -->
+				<section id="how" class="wrapper style3">
 					<div class="inner">
-						<h2>Guide d'installation pas-à-pas — PubBit</h2>
-						<p>PubBit est une extension légère qui vous récompense en Sats pendant votre navigation via le réseau Lightning. Disponible pour Chrome et Firefox. Suivez ces 4 étapes simples ; chaque étape contient une grande image pour vous guider visuellement.</p>
+						<h2>Installer l'extension Arise&mdash;pas à pas</h2>
+						<p>L'extension est le cœur du produit : auth, découverte des projets, contribution, wallet et paiement s'y trouvent (le hub web est optionnel). Disponible pour Chrome, Edge, Brave et Firefox. Suivez ces 4 étapes ; chaque étape contient une image pour vous guider.</p>
 						<div class="how-steps">
 							<!-- Step 1 -->
 							<article class="step">
 								<div class="image"><img src="images/etape1.png" alt="Télécharger et dézipper" /></div>
 								<div class="content">
-									<h3>1 — Télécharger & dézipper</h3>
-									<p>Téléchargez le fichier depuis <a href="https://drive.google.com/file/d/169Llb_-e-qqlHVcfKNQo-bubttxUZp2k/view?usp=sharing" target="_blank">pubbit.com</a>. Le fichier est généralement nommé <em>pubbit-x.y.z.zip</em>. Une fois le téléchargement terminé, dézippez-le sur votre ordinateur (clic droit → Extraire / unzip).</p>
-									<p>Vous obtiendrez un dossier contenant au minimum : <code>manifest.json</code>, un dossier <code>icons/</code> et un dossier <code>src/</code>. Conservez ce dossier accessible (par exemple sur le Bureau) pour l'étape d'installation.</p>
+									<h3>1 — Télécharger &amp; dézipper</h3>
+									<p>Téléchargez l'archive de l'extension depuis <a href="https://drive.google.com/file/d/169Llb_-e-qqlHVcfKNQo-bubttxUZp2k/view?usp=sharing" target="_blank" rel="noopener">le lien de distribution</a>. Le fichier est nommé <em>arise-x.y.z.zip</em>. Une fois téléchargé, dézippez-le sur votre ordinateur (clic droit &rarr; Extraire).</p>
+									<p>Vous obtiendrez un dossier contenant au minimum <code>manifest.json</code>, ainsi que les scripts (<code>popup.js</code>, <code>background.js</code>, <code>content.js</code>). Conservez ce dossier accessible (par exemple sur le Bureau) pour l'étape d'installation.</p>
 								</div>
 							</article>
 							<!-- Step 2 -->
 							<article class="step">
 								<div class="image"><img src="images/etape2.png" alt="Ouvrir le navigateur" /></div>
 								<div class="content">
-									<h3>2 — Ouvrir Chrome ou Firefox</h3>
-									<p>Choisissez le navigateur dans lequel vous souhaitez installer PubBit. Ces instructions couvrent Chrome (Chromium, Edge basé sur Chromium) et Firefox. Si vous utilisez un autre navigateur, suivez la procédure correspondante sur <a href="https://pubbit.com" target="_blank">notre site</a>.</p>
-									<p>Important : pour Chrome, assurez-vous d'avoir une version récente et d'activer le mode développeur lors de l'installation locale. Pour Firefox, on utilisera la page <code>about:debugging</code> pour charger temporairement l'extension.</p>
+									<h3>2 — Ouvrir Chrome / Edge / Brave ou Firefox</h3>
+									<p>Choisissez le navigateur dans lequel installer Arise. Ces instructions couvrent les navigateurs Chromium (Chrome, Edge, Brave) et Firefox (109+), tous compatibles Manifest V3.</p>
+									<p>Important : pour un navigateur Chromium, activez le mode développeur pour l'installation locale. Pour Firefox, on utilise la page <code>about:debugging</code> pour charger temporairement l'extension.</p>
 								</div>
 							</article>
 							<!-- Step 3 -->
 							<article class="step">
 								<div class="image"><img src="images/etape3.png" alt="Passer en mode développeur / about:debugging" /></div>
 								<div class="content">
-									<h3>3 — Mode développeur (Chrome) ou page de debug (Firefox)</h3>
+									<h3>3 — Mode développeur (Chromium) ou page de debug (Firefox)</h3>
 									<div class="instructions chrome" style="display:none;">
-										<h4>Chrome / Chromium</h4>
+										<h4>Chrome / Edge / Brave</h4>
 										<ol>
-											<li>Ouvrez l'adresse <code>chrome://extensions/</code> dans la barre d'adresse.</li>
+											<li>Ouvrez l'adresse <code>chrome://extensions/</code> (ou <code>edge://extensions/</code>, <code>brave://extensions/</code>).</li>
 											<li>Activez le <strong>Mode développeur</strong> (coin supérieur droit).</li>
 											<li>Cliquez sur <strong>Charger l'extension non empaquetée</strong>.</li>
-											<li>Sélectionnez le dossier dézippé (le dossier qui contient <code>manifest.json</code>).</li>
-											<li>L'extension apparaîtra dans la liste et s'activera immédiatement. Vous pouvez épingler l'icône si vous le souhaitez.</li>
+											<li>Sélectionnez le dossier dézippé (celui qui contient <code>manifest.json</code>).</li>
+											<li>L'extension apparaît dans la liste et s'active immédiatement. Épinglez l'icône si vous le souhaitez.</li>
 										</ol>
 									</div>
 									<div class="instructions firefox" style="display:none;">
@@ -97,46 +251,43 @@
 											<li>Ouvrez <code>about:debugging#/runtime/this-firefox</code> dans la barre d'adresse.</li>
 											<li>Cliquez sur <strong>Charger un module complémentaire temporaire</strong>.</li>
 											<li>Sélectionnez le fichier <code>manifest.json</code> dans le dossier dézippé.</li>
-											<li>L'extension sera chargée pour la session courante (temporaire). Pour une installation permanente, suivez la procédure de publication sur AMO ou utilisez un XPI signé.</li>
+											<li>L'extension est chargée pour la session courante. Pour une installation permanente, un XPI signé (AMO) sera requis.</li>
 										</ol>
 									</div>
-									<p>Ces étapes permettent d'installer localement en développement. Si vous préférez, installez PubBit directement depuis le Chrome Web Store ou AMO (Firefox) si la version y est disponible.</p>
+									<p>Ces étapes installent l'extension en mode développeur. La publication sur le Chrome Web Store et Firefox Add-ons est prévue dans la feuille de route.</p>
 								</div>
 							</article>
 							<!-- Step 4 -->
 							<article class="step">
-								<div class="image"><img src="images/etape4.png" alt="Charger depuis le stockage local / activer" /></div>
+								<div class="image"><img src="images/etape4.png" alt="Se connecter et contribuer" /></div>
 								<div class="content">
-									<h3>4 — Charger et activer</h3>
-									<div class="instructions chrome" style="display:none;">
-										<p>Après avoir chargé l'extension non empaquetée, vérifiez les permissions demandées (accès aux onglets, permissions de stockage, etc.). Activez l'extension et cliquez sur l'icône pour ouvrir le panneau PubBit.</p>
-									</div>
-									<div class="instructions firefox" style="display:none;">
-										<p>Après chargement temporaire, cliquez sur l'icône dans la barre d'outils pour ouvrir PubBit. Notez que le chargement temporaire disparaît après redémarrage ; pour usage prolongé, installez depuis AMO.</p>
-									</div>
-									<p>Une fois installée, PubBit peut vous demander d'autoriser une connexion à votre portefeuille Lightning. Ceci est nécessaire pour créditer vos Sats. Les paramètres de l'extension permettent d'ajuster la fréquence et les préférences de monétisation.</p>
+									<h3>4 — Se connecter &amp; contribuer</h3>
+									<p>Ouvrez l'extension et connectez-vous (email ou Google, via Firebase). Parcourez les projets actifs, cliquez sur <strong>« Visiter le site »</strong> : un onglet s'ouvre et le chrono du temps actif démarre.</p>
+									<p>Après la durée minimum (ex. 120&nbsp;s), validez votre contribution : le serveur vérifie l'intégrité IPFS puis crédite vos sats. Retrouvez votre solde, votre historique et le dépôt Izichange dans l'onglet <strong>Wallet</strong>. Le mode clair/sombre se règle dans <strong>Paramètres</strong>.</p>
 								</div>
 							</article>
 						</div>
 						<!-- Description détaillée de l'extension -->
-						<section style="margin-top:2rem; background: rgba(255,255,255,0.01); padding:1rem; border-radius:8px;">
-							<h3>Description complète de PubBit</h3>
-							<p>PubBit est une extension qui rémunère votre attention en distribuant des fractions de Bitcoin (Sats) via Lightning. Elle fonctionne en arrière-plan, évalue anonymement l'engagement et propose des micropaiements rémunérateurs. Caractéristiques :</p>
-							<ul>
-								<li><strong>Confidentialité :</strong> pas de tracking centralisé, les données restent locales.</li>
-								<li><strong>Rapide :</strong> paiements Lightning instantanés.</li>
-								<li><strong>Contrôlable :</strong> paramètres pour limiter la fréquence et les types d'annonces.</li>
-								<li><strong>Portable :</strong> disponible sur Chrome & Firefox.</li>
+						<section class="ext-desc">
+							<h3>Ce que contient l'extension Arise</h3>
+							<p>L'extension (Manifest V3) est autonome et regroupe toutes les fonctionnalités du MVP :</p>
+							<ul class="check-list two-col">
+								<li><strong>Authentification :</strong> email, Google et Firebase.</li>
+								<li><strong>Découverte :</strong> campagnes actives dans « Projets » et « À découvrir ».</li>
+								<li><strong>Contribution :</strong> chrono du temps actif, validation, crédit en sats.</li>
+								<li><strong>Wallet :</strong> solde, historique, dépôt via Izichange.</li>
+								<li><strong>Soumission :</strong> URL + budget, épinglage IPFS et paiement.</li>
+								<li><strong>Paramètres :</strong> mode clair/sombre persisté, déconnexion.</li>
 							</ul>
-							<p>Pour toute question ou pour signaler un problème, rendez-vous sur <a href="https://pubbit.com" target="_blank">pubbit.com</a> ou contactez-nous via la page Contact.</p>
+							<p>Un hub web complémentaire (dashboard développeur) est disponible sur <a href="https://pubbit.vercel.app" target="_blank" rel="noopener">pubbit.vercel.app</a>, mais l'extension fonctionne seule.</p>
 						</section>
 					</div>
 					<script>
-						// Détecte Chrome vs Firefox et affiche les instructions correspondantes
+						// Détecte Chromium vs Firefox et affiche les instructions correspondantes
 						(function(){
 							var ua = navigator.userAgent.toLowerCase();
 							var isFirefox = ua.indexOf('firefox') !== -1;
-							var isChrome = /chrome|chromium|crios/.test(ua) && !isFirefox;
+							var isChrome = /chrome|chromium|crios|edg|brave/.test(ua) && !isFirefox;
 							var chromeEls = document.querySelectorAll('.instructions.chrome');
 							var firefoxEls = document.querySelectorAll('.instructions.firefox');
 							if(isFirefox){
@@ -153,84 +304,46 @@
 					</script>
 				</section>
 
-				<!-- Fonctionnalités -->
-					<section id="features" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Pourquoi Pubbit?</h2>
-							<p>Une nouvelle façon d'interagir avec le web, pensée pour le marché UEMOA et au-delà.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-coins"></span>
-									<h3>Gagnez vraiment</h3>
-									<p>Pas de fausses promesses. Des vrais Sats Bitcoin, retirables à tout moment sur votre portefeuille.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-bolt"></span>
-									<h3>Lightning Fast</h3>
-									<p>Transactions instantanées avec des frais inférieurs à 1%. Aucun intermédiaire lourd.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>100% privé</h3>
-									<p>Zéro tracking. Zéro données personnelles. Juste vous et vos Sats.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-globe"></span>
-									<h3>Accès mondial</h3>
-									<p>Disponible partout. Aucune limite géographique, pas de banque requise.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-mobile-alt"></span>
-									<h3>Mobile first</h3>
-									<p>Optimisé pour votre téléphone. Légère, rapide et intuitive.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-bullseye"></span>
-									<h3>Hyper simple</h3>
-									<p>Installer, surfer, gagner. Trois étapes, c'est tout.</p>
-								</section>
-							</div>
-						</div>
-					</section>
-
 				<!-- Statistiques -->
 					<section id="stats" class="wrapper style1 fade-up">
 						<div class="inner">
-							<h2>Ils nous font déjà confiance</h2>
+							<h2>Un MVP déployé et fonctionnel</h2>
+							<p>Backend en production (Railway), hub sur Vercel, paiements Izichange et épinglage IPFS opérationnels.</p>
 							<div class="stats-grid">
 								<div class="stat">
-									<div class="stat-number" data-target="200000">0</div>
-									<div class="stat-label">Sats distribués</div>
+									<div class="stat-number" data-target="4">0</div>
+									<div class="stat-label">Navigateurs supportés (MV3)</div>
 								</div>
 								<div class="stat">
-									<div class="stat-number" data-target=12">0</div>
-									<div class="stat-label">Bêta testeurs</div>
+									<div class="stat-number" data-target="100">0</div>
+									<div class="stat-label">% récompenses en sats (Bitcoin)</div>
 								</div>
 								<div class="stat">
-									<div class="stat-number" data-target="3">0</div>
-									<div class="stat-label">Pays actifs</div>
+									<div class="stat-number" data-target="120">0</div>
+									<div class="stat-label">Secondes de visite type</div>
 								</div>
 								<div class="stat">
-									<div class="stat-number" data-target="99">0</div>
-									<div class="stat-label">% de satisfaction</div>
+									<div class="stat-number" data-target="1">0</div>
+									<div class="stat-label">Version MVP publiée</div>
 								</div>
 							</div>
 						</div>
 					</section>
 
-				<!-- Tarifs -->
-					<section id="pricing" class="wrapper style2 fade-up">
+				<!-- Campagnes / Financer -->
+					<section id="campaigns" class="wrapper style2 fade-up">
 						<div class="inner">
-							<h2>Tarification simplifiée</h2>
-							<p>Pour développeurs et créateurs.</p>
+							<h2>Financer une campagne</h2>
+							<p>Développeurs et créateurs : envoyez du trafic qualifié vers votre site. Choisissez un budget en sats, Arise s'occupe de l'épinglage IPFS et du paiement Izichange. Le budget est consommé uniquement sur les visites validées.</p>
 							<div class="pricing-cards">
 								<div class="price-card">
-									<div class="price-badge">Basique</div>
+									<div class="price-badge">Découverte</div>
 									<h3>Starter</h3>
-									<div class="price">25 000 XOF<span>/mois</span></div>
+									<div class="price">25 000 XOF<span>/ campagne</span></div>
 									<ul class="price-features">
-										<li><span class="icon solid fa-check"></span>70% aux utilisateurs</li>
-										<li><span class="icon solid fa-check"></span>Stats en temps réel</li>
+										<li><span class="icon solid fa-check"></span>Budget en sats convertis via Izichange</li>
+										<li><span class="icon solid fa-check"></span>Épinglage IPFS + empreinte SHA-256</li>
+										<li><span class="icon solid fa-check"></span>Visites qualifiées au temps actif</li>
 										<li><span class="icon solid fa-check"></span>Support email</li>
 									</ul>
 									<a href="#contact" class="button scrolly">Commencer</a>
@@ -238,38 +351,40 @@
 
 								<div class="price-card featured">
 									<div class="price-badge premium">Populaire</div>
-									<h3>Pro</h3>
-									<div class="price">75 000 XOF<span>/mois</span></div>
+									<h3>Croissance</h3>
+									<div class="price">75 000 XOF<span>/ campagne</span></div>
 									<ul class="price-features">
-										<li><span class="icon solid fa-check"></span>70% aux utilisateurs</li>
-										<li><span class="icon solid fa-check"></span>Analytics avancées</li>
-										<li><span class="icon solid fa-check"></span>API d'intégration</li>
+										<li><span class="icon solid fa-check"></span>Tout de Starter</li>
+										<li><span class="icon solid fa-check"></span>Manifeste sécurité + ancrage Bitcoin</li>
+										<li><span class="icon solid fa-check"></span>Diffusion Nostr de la campagne</li>
+										<li><span class="icon solid fa-check"></span>Suivi budget &amp; visites</li>
 										<li><span class="icon solid fa-check"></span>Support prioritaire</li>
 									</ul>
-									<a href="#contact" class="button primary scrolly">Commencer</a>
+									<a href="#contact" class="button primary scrolly">Lancer ma campagne</a>
 								</div>
 
 								<div class="price-card">
-									<div class="price-badge">Pour les pros</div>
+									<div class="price-badge">Sur-mesure</div>
 									<h3>Entreprise</h3>
 									<div class="price">Personnalisé</div>
 									<ul class="price-features">
-										<li><span class="icon solid fa-check"></span>Tout du plan Pro</li>
-										<li><span class="icon solid fa-check"></span>Campagnes illimitées</li>
-										<li><span class="icon solid fa-check"></span>Manager dédié</li>
-										<li><span class="icon solid fa-check"></span>Intégrations custom</li>
+										<li><span class="icon solid fa-check"></span>Budget &amp; volumes personnalisés</li>
+										<li><span class="icon solid fa-check"></span>Passerelle IPFS dédiée</li>
+										<li><span class="icon solid fa-check"></span>Intégration API B2B</li>
+										<li><span class="icon solid fa-check"></span>Accompagnement dédié</li>
 									</ul>
 									<a href="#contact" class="button scrolly">Nous contacter</a>
 								</div>
 							</div>
+							<p class="note">Montants indicatifs. Les paiements sont traités par Izichange (Mobile Money, crypto, BTC). En sandbox, les paiements BTC utilisent le testnet.</p>
 						</div>
 					</section>
 
 				<!-- Contact -->
 					<section id="contact" class="wrapper style1 fade-up">
 						<div class="inner">
-							<h2>Prêt à révolutionner votre web?</h2>
-							<p>Rejoignez des milliers d'utilisateurs et de créateurs qui changent le web, un Sat à la fois.</p>
+							<h2>Prêt à lancer, grandir et gagner&nbsp;?</h2>
+							<p>Rejoignez les développeurs et contributeurs qui construisent une économie de l'attention adossée à Bitcoin, un sat à la fois.</p>
 							<div class="split style1">
 								<section>
 									<form method="post" action="#">
@@ -288,7 +403,7 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Installer PUBBIT maintenant</a></li>
+											<li><a href="#how" class="button submit scrolly">Installer Arise maintenant</a></li>
 										</ul>
 									</form>
 								</section>
@@ -296,12 +411,16 @@
 									<ul class="contact">
 										<li>
 											<h3>À propos</h3>
-											<span>Pubbit — Révolutionner l'attention, rémunérer l'engagement.<br />
-											Une infrastructure publicitaire communautaire pour la zone UEMOA.</span>
+											<span>Arise (ex-PubBit / BitGrid) &mdash; lancez, grandissez, gagnez.<br />
+											Une infrastructure d'attention economy adossée à Bitcoin, pour la zone UEMOA et au-delà.</span>
+										</li>
+										<li>
+											<h3>Hub &amp; API</h3>
+											<span><a href="https://pubbit.vercel.app" target="_blank" rel="noopener">pubbit.vercel.app</a> &middot; API Railway</span>
 										</li>
 										<li>
 											<h3>Email</h3>
-											<a href="#">contact@pubit.io</a>
+											<a href="mailto:contact@pubit.io">contact@pubit.io</a>
 										</li>
 										<li>
 											<h3>Réseaux</h3>
@@ -324,7 +443,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; 2026 PUBBIT. Tous droits réservés.</li><li>Conforme UEMOA</li><li>Powered by Lightning</li>
+						<li>&copy; 2026 Arise. Tous droits réservés.</li><li>Conforme UEMOA</li><li>Sats · IPFS · Izichange</li>
 					</ul>
 				</div>
 			</footer>
@@ -339,15 +458,14 @@
 			<script src="assets/js/main.js"></script>
 
 			<script>
-				// Compteur du bandeau "En direct" (ticker) et des statistiques,
-				// remplace la logique de script.js d'origine (sans dépendance emoji).
+				// Compteur du bandeau "temps actif" (ticker) et des statistiques.
 				document.addEventListener('DOMContentLoaded', function () {
 
-					// Ticker Sats/jour
+					// Ticker sats / visite
 					var counterEl = document.getElementById('counter');
 					if (counterEl) {
-						var target = 3480, current = 0;
-						var step = Math.max(1, Math.round(target / 60));
+						var target = 10, current = 0;
+						var step = 1;
 						var tick = setInterval(function () {
 							current += step;
 							if (current >= target) {
@@ -355,7 +473,7 @@
 								clearInterval(tick);
 							}
 							counterEl.textContent = current.toLocaleString('fr-FR');
-						}, 30);
+						}, 80);
 					}
 
 					// Compteurs de la section statistiques, déclenchés à l'entrée dans le viewport
@@ -372,7 +490,7 @@
 							statNumbers.forEach(function (el) {
 								var target = parseInt(el.getAttribute('data-target'), 10) || 0;
 								var current = 0;
-								var step = Math.max(1, Math.round(target / 80));
+								var step = Math.max(1, Math.round(target / 40));
 								var tick = setInterval(function () {
 									current += step;
 									if (current >= target) {
@@ -380,7 +498,7 @@
 										clearInterval(tick);
 									}
 									el.textContent = current.toLocaleString('fr-FR');
-								}, 20);
+								}, 25);
 							});
 						}
 					}
